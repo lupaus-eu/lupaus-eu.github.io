@@ -1,1 +1,49 @@
+body {
+    font-family: "Raleway", sans-serif;
+    color:#715786;
+    /* height: 100%; */
+    /* line-height: 1.8; */
+
+}
+
+#navbar {
+    position: fixed; /* Make it stick/fixed */
+    top: -60px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    /*height:60px;*/
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    background-color:#715786;
+    /*display: block;*/
+    font-size:24px
+}
+
+.logo-text {
+    font-family: 'Audiowide', sans-serif;
+    /* color: #715786; */
+    color:#86EAE8;
+    /*color:#715786;*/
+    /*color:#A08FAE;*/
+    /*color:#D0C7D7;*/
+    /*color:#ffffff;*/
+}
+
+/* color:#715786; */
+/* color:#767C9F; */
+/* color:#7CA1B7; */
+/* color:#81C5D0; */
+/* color:#86EAE8; */
+
+/* Full height image header */
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/images/mobile-bg.jpg");
+    min-height: 100px;
+}
+
+.bg {
+    background-color:#715786;
+    height: 200px;
+}
+
 
