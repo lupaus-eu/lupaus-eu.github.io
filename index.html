@@ -1,53 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+    <title>Lupaus</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Under Construction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            font-size: 3em;
-            color: #333;
-        }
-        p {
-            font-size: 1.5em;
-            color: #666;
-        }
-        .container {
-            margin-top: 20%;
-        }
-        .footer {
-            position: fixed;
-            bottom: 10px;
-            width: 100%;
-            text-align: center;
-            color: #999;
-            font-size: 0.9em;
-        }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>🚧 Under Construction 🚧</h1>
-        <p>We're working hard to get things ready. Check back soon!</p>
+
+    <!-- Navbar with smaller font when scrolling down  -->
+    <div class="w3-top" id="navbar">
+        <div class="logo-text w3-padding-16 w3-center">LUPAUS</div>
     </div>
-    <div class="footer">
-        <img src="/images/lupaus-logo.png" style="width:300px;height:300px;" class="center">        
-        &copy; 2024 Lupaus
+
+    <!-- Header with full-height image -->
+    <header class="w3-display-container bg" id="home">
+        <div class="w3-display-middle">
+            <span class="logo-text w3-jumbo" style="font-weight:800;">LUPAUS</span><br>
+        </div>
+    </header>
+
+    <!-- "This is what we do" Section -->
+    <div class="w3-content w3-center w3-padding-large w3-padding-32" style="max-width:1200px" id="about">
+        <p class="w3-xxlarge " style="font-weight:600;">Make your business decisions stand!</p>
+        <p class="w3-large">In today's fast-paced world, making decisions based on gut feelings is no longer enough. To stay ahead, businesses need more than just experience—they need reliable insights based on accurate data. That’s where our <span style="font-weight:800">business modeling, forecasting and simulation service</span> comes in.</p>
+        <!-- Hide part of text by deafalt -->
+        <div class="w3-large" id="more">
+            <p>We specialize in analyzing and understanding the unique complexities of your business. Through detailed modeling of your operations, we provide advanced simulations that project future outcomes based on key factors and trends. By forecasting potential scenarios, we help you not only anticipate challenges but also seize new opportunities. Our service goes beyond data crunching: we transform data into actionable insights that guide your decision-making process with clarity and confidence.</p>
+            <p>Our goal is simple: <span style="font-weight:800;">to help you make informed, impactful decisions that drive success.</span></p>
+        </div>
+        <button class="w3-tiny" style="color:#715786" onclick="myFunction()" id="myBtn">Read more</button>
     </div>
+
+
+    <!-- Promo Section "Statistics" A4789E / 715786-->
+    <div class="w3-padding-32" style="background-color:#A08FAE;">
+        <div class="w3-content w3-row-padding w3-center w3-text-white" style="max-width:1200px">
+            <div class="w3-third w3-padding-top-32">
+                Companies that embrace predictive analytics see an increase in operational efficiency by
+                <br><span class="w3-jumbo">20%</span>
+            </div>
+            <div class="w3-third w3-padding-top-32">
+                Business leaders say advanced simulations improve decision-making confidence with
+                <br><span class="w3-jumbo">92%</span> 
+            </div>
+            <div class="w3-third w3-padding-top-32">
+                Businesses using data-driven insights are more likely to acquire new customers by
+                <br><span class="w3-jumbo">23x</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- "This is what we do" Section -->
+    <div class="w3-content w3-center w3-padding-64" style="max-width:1200px" id="about">
+        <p class="w3-xlarge">This is how our service works:</p>
+        <div class="w3-row-padding w3-padding-top-32">
+            <div class="w3-quarter">
+                <i class="fa fa-sitemap w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">MODEL</p>
+                <p>First your business is modelled with TSC-framework. Critical business rules and KPI's are attached to the model.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-database w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">DATA</p>
+                <p>Existing data from operative systems will be collected and assumptions for the future are defined.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-gears w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">SIMULATION</p>
+                <p>Now that we have historical data and indicators in place, we can forecast and simulate some scenarios for your business.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-bullseye w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">GOAL</p>
+                <p>With the simulation results and insights we can now define goals for your business and help with decission making.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-center bg w3-text-white w3-padding-top-64" id="contact">
+        <div class="w3-xlarge w3-padding-top-64">
+            <a href="https://www.linkedin.com/company/3854858" target="_blank" style="color:#86EAE8;">
+                <i class="fa fa-linkedin-square fa-fw w3-margin-right w3-xxlarge"></i></a>
+            <br><a href="mailto:info@lupaus.eu"><span style="color:#86EAE8;"><i class="fa fa-envelope fa-fw  w3-margin-right"></i></span></a>info@lupaus.eu
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding-64 bg">
+        
+    </footer>
+
+    <script>
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("sidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-60px";
+            }
+        }
+
+        function myFunction() {
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+
+            if (btnText.innerHTML === "Read less") {
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+            } else {
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "block";
+            }
+        }
+    </script>
+
 </body>
+
 </html>
+	
