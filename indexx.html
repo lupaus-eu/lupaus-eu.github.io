@@ -25,16 +25,20 @@
     <!-- Header with full-height image -->
     <header class="w3-display-container bg" id="home">
         <div class="w3-display-middle">
-            <span class="logo-text" style="font-size:100px;font-weight:800;">LUPAUS</span><br>
+            <span class="logo-text w3-jumbo" style="font-weight:800;">LUPAUS</span><br>
         </div>
     </header>
 
     <!-- "This is what we do" Section -->
     <div class="w3-content w3-center w3-padding-large w3-padding-32" style="max-width:1200px" id="about">
         <p class="w3-xxlarge " style="font-weight:600;">Make your business decisions stand!</p>
-        <p class="w3-large">In today's fast-paced world, making decisions based on gut feelings is no longer enough. To stay ahead, businesses need more than just experience—they need reliable insights based on accurate data. That’s where our <span style="font-weight:800;">business modeling, forecasting and simulation service</span> comes in.</p>
-        <p class="w3-large">We specialize in analyzing and understanding the unique complexities of your business. Through detailed modeling of your operations, we provide advanced simulations that project future outcomes based on key factors and trends. By forecasting potential scenarios, we help you not only anticipate challenges but also seize new opportunities. Our service goes beyond data crunching: we transform data into actionable insights that guide your decision-making process with clarity and confidence.</p>
-        <p class="w3-large">Our goal is simple: <span style="font-weight:800;">to help you make informed, impactful decisions that drive success.</span></p>
+        <p class="w3-large">In today's fast-paced world, making decisions based on gut feelings is no longer enough. To stay ahead, businesses need more than just experience—they need reliable insights based on accurate data. That’s where our <span style="font-weight:800">business modeling, forecasting and simulation service</span> comes in.</p>
+        <!-- Hide part of text by deafalt -->
+        <div class="w3-large" id="more">
+            <p>We specialize in analyzing and understanding the unique complexities of your business. Through detailed modeling of your operations, we provide advanced simulations that project future outcomes based on key factors and trends. By forecasting potential scenarios, we help you not only anticipate challenges but also seize new opportunities. Our service goes beyond data crunching: we transform data into actionable insights that guide your decision-making process with clarity and confidence.</p>
+            <p>Our goal is simple: <span style="font-weight:800;">to help you make informed, impactful decisions that drive success.</span></p>
+        </div>
+        <button class="w3-tiny" style="color:#715786" onclick="myFunction()" id="myBtn">Read more</button>
     </div>
 
 
@@ -122,10 +126,24 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-            if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 document.getElementById("navbar").style.top = "0";
             } else {
                 document.getElementById("navbar").style.top = "-60px";
+            }
+        }
+
+        function myFunction() {
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+
+            if (btnText.innerHTML === "Read less") {
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+            } else {
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "block";
             }
         }
     </script>
